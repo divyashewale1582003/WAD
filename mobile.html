@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/mobile.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+        /* CSS to set a fixed size for all images */
+        img {
+            width: 200px; /* Adjust the width as per your requirement */
+            height: 150px; /* Adjust the height as per your requirement */
+        }
+    </style>
+</head>
+<body>
+	<div data-role="page" id="page1" data-theme="b">
+		<div data-role="header" data-position="inline">
+			<h6>Dream Bean Café</h6>
+		</div>
+		<div data-role="content" data-theme="b">
+
+			
+			<pre style="font-family: Calibri; font-size:xx-large; font-weight: bolder; text-align:center">
+				Where Every Cup Holds a Story, and Every Bite is a Dream Come True!
+			</pre>
+			<img src="cafe.jpg" style="width: 1000px; height: 500px; display: block; margin: 20px auto" >
+			
+			<pre style="font-size: larger; font-weight:bold; font-family:Arial, Helvetica, sans-serif; ">About Us:</pre>
+			<p style="font-style: italic; font-family:cursive">Welcome to Dream Bean Café, where every cup tells a story! 
+				Established with a passion for crafting exceptional coffee experiences, 
+				Dream Bean Café is more than just a place to grab your favorite brew—it's a community hub,
+				 a creative space, and a haven for coffee lovers. Nestled in the heart of [your location], 
+				 our café boasts a warm and inviting atmosphere where friends, families, and colleagues 
+				 come together to savor delicious handcrafted beverages, indulge in freshly baked treats, 
+				 and connect with one another. Our dedicated team of baristas takes pride in sourcing the finest beans from around the world,
+				  ensuring each cup is brewed to perfection. Whether you're seeking a cozy spot to work, 
+				  catch up with friends, or simply unwind with a good book, Dream Bean Café welcomes you to embark on a journey of flavor, comfort, and inspiration.
+				   Join us as we transform your coffee dreams into delightful realities, one sip at a time.
+
+			</p>
+			<p>click here...for choosing your meal <a href="#page2" class="ui-link">let's go</a>.</p>
+		</div>
+	</div>
+
+
+	<div data-role= " page" id="page2" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h4>Type of meals</h4>
+		</div>
+		<div data-role="content" data-theme="a">
+			<p style="font-weight:bolder;">Welcome to Dream Bean Café!</p>
+				
+				<p style="font-weight: 800;">Indulge in our flavorful dishes crafted with care:</p>
+				<ul>
+				<li>- Signature Breakfast: Fluffy pancakes, crispy bacon, and creamy avocado toast.</li>
+				  
+				<li>- Gourmet Sandwiches: Classic BLT with a twist and homemade soup.</li>
+				  
+				<li>- Famous Dish: Dream Bean Burger </li>
+				<li>– juicy beef, melted cheese, caramelized onions, and tangy barbecue sauce on a toasted brioche bun.</li>
+			</ul>
+				Join us for a culinary journey that celebrates great food and good living!</p>
+			
+				
+        <label style="font-weight: 900;">Choose your favorite foods:</label><br>
+
+        <input type="checkbox" id="pizza" name="food" value="pizza" >
+		<img src="pizzA.jpg"  >
+        <label for="pizza">Pizza</label><br>
+        <input type="checkbox" id="burger" name="food" value="burger">
+		<img src="burger.jpeg" >
+        <label for="burger">Burger</label><br>
+        <input type="checkbox" id="ColdDrink" name="food" value="ColdDrink">
+		<img src="cold.jpg"  >
+        <label for="ColdDrink">ColdDrink</label><br>
+        <input type="checkbox" id="pasta" name="food" value="pasta">
+		<img src="pasta.jpg"  >
+        <label for="pasta">Pasta</label><br>
+        <input type="checkbox" id="Sandwitches" name="food" value="Sandwitches">
+		<img src="sandw.jpg"  >
+        <label for="Sandwitches">Sandwitches</label><br>
+        <input type="checkbox" id="salad" name="food" value="salad">
+		<img src="sala.jpg"  >
+        <label for="salad">Salad</label><br>
+		</pre>
+		<p>click here...for order <a href="#page3" class="ui-link">link</a>.</p>
+		</div>
+	</div>
+		<div data-role="page" id="page3" data-theme="c">
+			<div data-role="header" data-position="inline">
+				<h6>Order & Payment & more</h6>
+			</div>
+			<div data-role="content" data-theme="a">
+				<pre style="font-weight: 900; font-size:larger">
+					Rate our food!
+				</pre>
+			
+				<label for="slider1">Input slider:</label>
+				<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
+				<p>click here..to lookOut next items <a href="#page2" class="ui-link">link</a>.</p>
+				<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+				<legend>type of delivery</legend>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
+				<label for="radio-choice-a1">Dine-in</label>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
+				<label for="radio-choice-b1">Take-away</label>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
